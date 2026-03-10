@@ -92,6 +92,34 @@ footer{border-top:1px solid #1a1a1a;padding:40px;display:flex;align-items:center
 .empty-state{padding:80px 40px;text-align:center}
 .empty-state .big{font-family:'Bebas Neue',sans-serif;font-size:80px;color:#1a1a1a;letter-spacing:4px}
 .loading{padding:60px 40px;text-align:center;font-family:'DM Mono',monospace;font-size:12px;color:#333;letter-spacing:3px;text-transform:uppercase}
+.brief-section{background:#0d0d0d;border-bottom:1px solid #1e1e1e;padding:48px 40px}
+.brief-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:12px}
+.brief-title{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:2px;color:var(--white)}
+.brief-title span{color:var(--red)}
+.brief-meta{font-family:'DM Mono',monospace;font-size:10px;color:#444;letter-spacing:1.5px}
+.brief-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:#1e1e1e;margin-bottom:1px}
+.brief-biggest{background:#0a0a0a;padding:32px;border-left:3px solid var(--red);grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.brief-biggest-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--red);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.brief-biggest-headline{font-family:'Bebas Neue',sans-serif;font-size:36px;line-height:1;color:var(--white);margin-bottom:14px;text-transform:uppercase}
+.brief-biggest-why{font-family:'DM Mono',monospace;font-size:11px;color:#888;letter-spacing:.5px;line-height:1.6;border-left:2px solid var(--red);padding-left:12px;margin-top:8px}
+.brief-biggest-body{font-size:13px;color:#666;line-height:1.7}
+.brief-theme{background:#0d0d0d;padding:28px}
+.brief-theme-num{font-family:'Bebas Neue',sans-serif;font-size:48px;color:#1a1a1a;line-height:1;margin-bottom:8px}
+.brief-theme-title{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
+.brief-theme-body{font-size:12px;color:#555;line-height:1.65;margin-bottom:14px}
+.brief-source-tags{display:flex;flex-wrap:wrap;gap:5px}
+.brief-source-tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1px;color:#888;border:1px solid #2a2a2a;padding:2px 7px;text-transform:uppercase}
+.brief-bottom{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#1e1e1e}
+.brief-trends{background:#0d0d0d;padding:28px}
+.brief-trends-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
+.brief-trend-item{padding:12px 0;border-bottom:1px solid #151515}
+.brief-trend-item:last-child{border-bottom:none}
+.brief-trend-title{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:var(--white);text-transform:uppercase;margin-bottom:5px}
+.brief-trend-body{font-size:12px;color:#555;line-height:1.6}
+.brief-outlook{background:#0d0d0d;padding:28px}
+.brief-outlook-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
+.brief-outlook-body{font-size:13px;color:#666;line-height:1.75}
+@media(max-width:768px){.brief-grid{grid-template-columns:1fr}.brief-biggest{grid-template-columns:1fr}.brief-bottom{grid-template-columns:1fr}.brief-section{padding:32px 20px}}
 @media(max-width:768px){.featured{grid-template-columns:1fr}.stats-bar{grid-template-columns:repeat(2,1fr)}header{padding:0 20px}.hero{padding:60px 20px 40px}.main{padding:20px}.modal-header{padding:32px 24px 0}.modal-body{padding:0 24px 40px}.modal-source-bar{padding:12px 24px}.modal-footer{padding:20px 24px}.modal-overlay{padding:0}}
 </style>
 </head>
@@ -115,6 +143,13 @@ footer{border-top:1px solid #1a1a1a;padding:40px;display:flex;align-items:center
 <button class="filter-btn" onclick="filterCards('motorsport',this)">Motorsport</button>
 <button class="filter-btn" onclick="filterCards('skysportsf1',this)">Sky Sports F1</button>
 </div>
+<div class="brief-section" id="brief-section" style="display:none">
+  <div class="brief-header">
+    <div class="brief-title">Daily <span>Intelligence</span> Brief</div>
+    <div class="brief-meta" id="brief-meta"></div>
+  </div>
+  <div id="brief-content"></div>
+</div>
 <main class="main">
 <div class="stats-bar">
 <div class="stat-item"><div class="stat-num" id="stat-total">—</div><div class="stat-label">Stories Today</div></div>
@@ -136,6 +171,57 @@ footer{border-top:1px solid #1a1a1a;padding:40px;display:flex;align-items:center
 </div>
 <script>
 let allArticles=[];
+async function loadBrief(){
+  try{
+    const r=await fetch('daily_brief.json?t='+Date.now());
+    if(!r.ok)return;
+    const b=await r.json();
+    renderBrief(b);
+  }catch(e){}
+}
+function sourceTags(sources){
+  if(!sources||!sources.length)return'';
+  return`<div class="brief-source-tags">${sources.map(s=>`<span class="brief-source-tag">${s}</span>`).join('')}</div>`;
+}
+function renderBrief(b){
+  const biggest=b.biggest_story||{};
+  const themes=(b.top_themes||[]).slice(0,3);
+  const trends=b.emerging_trends||[];
+  const outlook=b.thirty_day_outlook||'';
+  const sources=(b.sources||[]).join(' · ').toUpperCase();
+  const date=b.generated_at?new Date(b.generated_at).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}):'';
+  document.getElementById('brief-meta').textContent=`${date} · ${b.article_count||0} ARTICLES ANALYSED · ${sources}`;
+  document.getElementById('brief-content').innerHTML=`
+    <div class="brief-grid">
+      <div class="brief-biggest">
+        <div>
+          <div class="brief-biggest-label">◆ Biggest Story Today</div>
+          <div class="brief-biggest-headline">${biggest.headline||''}</div>
+          <div class="brief-source-tags" style="margin-bottom:12px"><span class="brief-source-tag">${biggest.source||''}</span></div>
+          <div class="brief-biggest-why">${biggest.why_it_matters||''}</div>
+        </div>
+        <div class="brief-biggest-body">${biggest.summary||''}</div>
+      </div>
+      ${themes.map((t,i)=>`
+      <div class="brief-theme">
+        <div class="brief-theme-num">0${i+1}</div>
+        <div class="brief-theme-title">${t.theme||''}</div>
+        <div class="brief-theme-body">${t.summary||''}</div>
+        ${sourceTags(t.sources)}
+      </div>`).join('')}
+    </div>
+    <div class="brief-bottom">
+      <div class="brief-trends">
+        <div class="brief-trends-label">◆ Emerging Trends</div>
+        ${trends.map(t=>`<div class="brief-trend-item"><div class="brief-trend-title">${t.trend||''}</div><div class="brief-trend-body">${t.summary||''}</div>${sourceTags(t.sources)}</div>`).join('')}
+      </div>
+      <div class="brief-outlook">
+        <div class="brief-outlook-label">◆ 30-Day Outlook</div>
+        <div class="brief-outlook-body">${outlook}</div>
+      </div>
+    </div>`;
+  document.getElementById('brief-section').style.display='block';
+}
 async function loadArticles(){try{const r=await fetch('articles.json?t='+Date.now());allArticles=await r.json();render(allArticles)}catch(e){allArticles=getDemoArticles();render(allArticles)}}
 function getDemoArticles(){return[{post_id:"d1",username:"f1",caption:"Championship battle heats up.",main_topic:"Championship Battle",core_message:"Title fight far from over.",key_insights:"Major upgrades incoming. Strategy crucial.",generated_script:"Three drivers. Five races. Everything to play for.",permalink:"https://instagram.com",timestamp:Date.now()/1000},{post_id:"d2",username:"lewishamilton",caption:"New chapter begins.",main_topic:"Hamilton Ferrari",core_message:"Historic switch to Ferrari.",key_insights:"Strong pace shown. Team integration going well.",generated_script:"Seven titles. One dream unfulfilled. Lewis in red.",permalink:"https://instagram.com",timestamp:Date.now()/1000-86400}]}
 let currentArticles=[];
@@ -181,6 +267,7 @@ ${a.generated_script?`<div style="padding:0 56px 40px"><div class="modal-divider
 }
 function closeModal(e){if(e.target===document.getElementById('modal-overlay')){document.getElementById('modal-overlay').classList.remove('open');document.body.style.overflow=''}}
 function formatDate(t){if(!t)return'';const d=typeof t==='number'?new Date(t*1000):new Date(t);return d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}
+loadBrief();
 loadArticles();
 </script>
 </body>
