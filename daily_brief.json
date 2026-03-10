@@ -1,67 +1,71 @@
 {
   "top_themes": [
     {
-      "theme": "F1 2026 Safety Concerns",
-      "summary": "The 2026 F1 season has raised significant safety concerns among drivers and teams. Issues like turbo lag, battery management, and active aerodynamics are creating dangerous conditions on the track. These concerns were highlighted during the Australian GP, where drivers experienced near-misses and expressed dissatisfaction with the new regulations.",
+      "theme": "F1 Safety Concerns Rise",
+      "summary": "The new 2026 F1 regulations have sparked significant safety concerns among drivers, with Lando Norris warning of potential high-speed accidents. Franco Colapinto's near-miss with Liam Lawson further highlights the dangers posed by the new power unit regulations.",
+      "sources": [
+        "racefansdotnet",
+        "motorsport"
+      ],
+      "articles": [
+        "Norris Warns of F1 Safety Risks",
+        "Colapinto's Scary Near-Miss with Lawson",
+        "F1 Battery Woes Hit Australian GP Start"
+      ]
+    },
+    {
+      "theme": "Mercedes' Dominance in 2026",
+      "summary": "Mercedes has reasserted its dominance in the 2026 season with a commanding 1-2 finish at the Australian GP. Despite Ferrari's competitive car, strategic missteps and battery issues hindered their performance, allowing Mercedes to capitalize.",
       "sources": [
         "the_race_media",
         "motorsport"
       ],
       "articles": [
-        "F1 2026 Safety Concerns Exposed",
-        "F1 Drivers Split on 2026 Cars",
-        "Ocon Frustrated as Haas Struggles Resurface"
+        "Mercedes Dominates 2026 Australian GP",
+        "Mercedes Dominates F1 2026 Opener",
+        "Wolff Prioritizes Fans Amid 2026 Rule Criticism"
       ]
     },
     {
-      "theme": "Ferrari's Strategic Missteps",
-      "summary": "Ferrari's decision-making during the Australian GP cost them a potential victory. Their failure to pit during a Virtual Safety Car allowed competitors like George Russell to gain an advantage, highlighting ongoing strategic challenges for the team.",
+      "theme": "Driver Rivalries Intensify",
+      "summary": "Tensions between drivers are escalating, with Max Verstappen accusing Arvid Lindblad of brake-checking and Liam Lawson reigniting a feud with Sergio Perez. These incidents highlight the growing intensity and competitiveness among drivers.",
       "sources": [
-        "racefansdotnet"
-      ],
-      "articles": [
-        "Ferrari's Pit Gamble Costs Australian GP"
-      ]
-    },
-    {
-      "theme": "Mercedes' Dominance and Customer Struggles",
-      "summary": "Mercedes showcased their dominance in the Australian GP, securing a 1-2 finish. However, customer teams like Williams and McLaren struggled to match their performance due to a knowledge gap in engine optimization, highlighting the disparity between works and customer teams.",
-      "sources": [
+        "racefansdotnet",
         "the_race_media"
       ],
       "articles": [
-        "Russell Dominates 2026 Australian GP",
-        "Williams Surprised by Mercedes Engine Mastery"
+        "Verstappen Claims Lindblad Brake-Checked Him",
+        "Lawson vs. Perez: Australian GP Clash"
       ]
     }
   ],
   "emerging_trends": [
     {
-      "trend": "Energy Management Challenges",
-      "summary": "The 2026 F1 regulations have introduced new energy management challenges, with drivers and teams struggling to adapt to the energy-starved power units. This issue is expected to persist as teams work to optimize battery management and address safety concerns.",
+      "trend": "Battery Management Challenges",
+      "summary": "The new regulations focusing on increased electrical power have introduced complex battery management challenges. Multiple teams, including Ferrari and Mercedes, struggled with depleted batteries, affecting race starts and overall performance.",
       "sources": [
-        "the_race_media",
-        "motorsport"
+        "motorsport",
+        "racefansdotnet"
       ]
     },
     {
-      "trend": "Honda's Reliability Issues",
-      "summary": "Honda is facing reliability issues with their power units, as seen with Aston Martin's struggles in the Australian GP. Despite improvements, the risk of nerve damage from vibrations remains a concern, and achieving full race distance is still a challenge.",
+      "trend": "Strategic Complexity in Races",
+      "summary": "The 2026 regulations have increased the strategic complexity of races, as seen in the Russell vs Leclerc duel. Teams are now focusing on energy management and strategic pit stops, which are becoming crucial for race outcomes.",
       "sources": [
         "racefansdotnet",
-        "motorsport"
+        "the_race_media"
       ]
     }
   ],
   "biggest_story": {
-    "headline": "Russell Dominates 2026 Australian GP",
-    "summary": "George Russell's strategic prowess and Mercedes' engine mastery led to a dominant victory at the Australian GP. Despite a rocky start due to battery issues, Russell managed to outpace competitors like Charles Leclerc, showcasing Mercedes' superior race strategy and performance. This victory underscores Mercedes' continued dominance in the 2026 season.",
+    "headline": "Mercedes Dominates 2026 Australian GP",
+    "summary": "Mercedes' commanding 1-2 finish at the Australian Grand Prix has set the tone for the 2026 season, reestablishing them as the team to beat. Despite Ferrari's initial strong performance, strategic errors and battery issues allowed Mercedes to pull ahead. This victory underscores Mercedes' ability to adapt to the new regulations and maintain their competitive edge.",
     "source": "the_race_media",
-    "why_it_matters": "Fans witnessed the strategic brilliance and technical superiority that define championship-winning teams."
+    "why_it_matters": "Mercedes' dominance impacts the championship race and fan expectations for the season."
   },
-  "thirty_day_outlook": "In the coming month, expect continued scrutiny and potential revisions of the 2026 F1 regulations, particularly concerning safety and energy management. Teams will be working to optimize their strategies and address technical challenges, with Mercedes likely maintaining their competitive edge. The upcoming Chinese GP will be a critical test for these new regulations, and the performance of teams like Ferrari and Aston Martin will be closely watched as they seek to overcome their early-season setbacks.",
-  "generated_at": "2026-03-10T13:54:49.571448+00:00",
-  "article_count": 15,
+  "thirty_day_outlook": "In the coming month, expect continued focus on the safety implications of the new F1 regulations, as drivers and teams adjust to the increased electrical power and battery management challenges. Mercedes' early dominance will likely prompt rivals like Ferrari and Red Bull to intensify their efforts to close the performance gap. Additionally, driver rivalries and strategic battles will continue to captivate fans, with potential flashpoints arising from aggressive on-track encounters and evolving team dynamics.",
+  "generated_at": "2026-03-10T13:59:55.302412+00:00",
+  "article_count": 14,
   "sources": [
     "motorsport",
     "racefansdotnet",
