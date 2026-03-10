@@ -103,23 +103,53 @@ footer{border-top:1px solid #1a1a1a;padding:40px;display:flex;align-items:center
 .brief-biggest-headline{font-family:'Bebas Neue',sans-serif;font-size:36px;line-height:1;color:var(--white);margin-bottom:14px;text-transform:uppercase}
 .brief-biggest-why{font-family:'DM Mono',monospace;font-size:11px;color:#888;letter-spacing:.5px;line-height:1.6;border-left:2px solid var(--red);padding-left:12px;margin-top:8px}
 .brief-biggest-body{font-size:13px;color:#666;line-height:1.7}
-.brief-theme{background:#0d0d0d;padding:28px}
+.brief-theme{background:#0d0d0d;padding:28px;cursor:pointer;transition:background .2s}
+.brief-theme:hover{background:#101010}
+.brief-theme:hover .brief-theme-title{color:var(--red)}
 .brief-theme-num{font-family:'Bebas Neue',sans-serif;font-size:48px;color:#1a1a1a;line-height:1;margin-bottom:8px}
-.brief-theme-title{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
+.brief-theme-title{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px;transition:color .2s}
 .brief-theme-body{font-size:12px;color:#555;line-height:1.65;margin-bottom:14px}
+.brief-theme-cta{font-family:'DM Mono',monospace;font-size:9px;color:#333;letter-spacing:1.5px;text-transform:uppercase;margin-top:12px}
 .brief-source-tags{display:flex;flex-wrap:wrap;gap:5px}
 .brief-source-tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1px;color:#888;border:1px solid #2a2a2a;padding:2px 7px;text-transform:uppercase}
 .brief-bottom{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#1e1e1e}
 .brief-trends{background:#0d0d0d;padding:28px}
 .brief-trends-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
-.brief-trend-item{padding:12px 0;border-bottom:1px solid #151515}
+.brief-trend-item{padding:14px 0;border-bottom:1px solid #151515;cursor:pointer;transition:padding-left .15s}
 .brief-trend-item:last-child{border-bottom:none}
-.brief-trend-title{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:var(--white);text-transform:uppercase;margin-bottom:5px}
+.brief-trend-item:hover{padding-left:8px}
+.brief-trend-item:hover .brief-trend-title{color:var(--accent)}
+.brief-trend-title{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:var(--white);text-transform:uppercase;margin-bottom:5px;transition:color .2s}
 .brief-trend-body{font-size:12px;color:#555;line-height:1.6}
 .brief-outlook{background:#0d0d0d;padding:28px}
 .brief-outlook-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
 .brief-outlook-body{font-size:13px;color:#666;line-height:1.75}
-@media(max-width:768px){.brief-grid{grid-template-columns:1fr}.brief-biggest{grid-template-columns:1fr}.brief-bottom{grid-template-columns:1fr}.brief-section{padding:32px 20px}}
+.analyst-modal{background:#0d0d0d;max-width:880px;width:100%;position:relative;animation:slideUp .3s ease;border:1px solid #1e1e1e}
+.analyst-header{background:#080808;border-bottom:1px solid #1e1e1e;padding:36px 48px 32px}
+.analyst-type{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px}
+.analyst-type.theme{color:var(--red)}
+.analyst-type.trend{color:var(--accent)}
+.analyst-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,5vw,52px);line-height:.95;color:var(--white);text-transform:uppercase;margin-bottom:18px}
+.analyst-sources-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.analyst-section{padding:32px 48px;border-bottom:1px solid #141414}
+.analyst-section-label{font-family:'DM Mono',monospace;font-size:10px;color:#444;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.analyst-section-label::before{content:'';width:16px;height:1px;background:var(--red)}
+.analyst-analysis{font-size:15px;color:#888;line-height:1.85}
+.analyst-analysis p{margin-bottom:16px}
+.analyst-sources-list{display:flex;flex-direction:column;gap:16px}
+.analyst-source-card{background:#080808;border:1px solid #1a1a1a;padding:20px 22px;border-left:2px solid #2a2a2a;transition:border-color .15s}
+.analyst-source-card:hover{border-left-color:var(--red)}
+.analyst-source-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:10px}
+.analyst-source-card-headline{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:var(--white);text-transform:uppercase;line-height:1.2}
+.analyst-source-card-source{font-family:'DM Mono',monospace;font-size:9px;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;white-space:nowrap;flex-shrink:0}
+.analyst-quote{font-size:13px;color:#666;font-style:italic;line-height:1.65;border-left:2px solid #2a2a2a;padding-left:14px;margin-bottom:8px}
+.analyst-datapoint{font-family:'DM Mono',monospace;font-size:11px;color:#555;letter-spacing:.5px}
+.analyst-link{display:inline-flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:10px;color:var(--red);text-decoration:none;letter-spacing:1px;text-transform:uppercase;margin-top:8px}
+.analyst-link:hover{color:var(--white)}
+.analyst-so-what{background:#080808;margin:0;padding:32px 48px;border-top:1px solid #141414}
+.analyst-so-what-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:14px}
+.analyst-so-what-body{font-size:15px;color:#999;line-height:1.8;font-style:italic}
+@media(max-width:768px){.brief-grid{grid-template-columns:1fr}.brief-biggest{grid-template-columns:1fr}.brief-bottom{grid-template-columns:1fr}.brief-section{padding:32px 20px}.analyst-header{padding:28px 24px 24px}.analyst-section{padding:24px}.analyst-so-what{padding:24px}}
 @media(max-width:768px){.featured{grid-template-columns:1fr}.stats-bar{grid-template-columns:repeat(2,1fr)}header{padding:0 20px}.hero{padding:60px 20px 40px}.main{padding:20px}.modal-header{padding:32px 24px 0}.modal-body{padding:0 24px 40px}.modal-source-bar{padding:12px 24px}.modal-footer{padding:20px 24px}.modal-overlay{padding:0}}
 </style>
 </head>
@@ -171,12 +201,13 @@ footer{border-top:1px solid #1a1a1a;padding:40px;display:flex;align-items:center
 </div>
 <script>
 let allArticles=[];
+let briefData=null;
 async function loadBrief(){
   try{
     const r=await fetch('daily_brief.json?t='+Date.now());
     if(!r.ok)return;
-    const b=await r.json();
-    renderBrief(b);
+    briefData=await r.json();
+    renderBrief(briefData);
   }catch(e){}
 }
 function sourceTags(sources){
@@ -203,17 +234,18 @@ function renderBrief(b){
         <div class="brief-biggest-body">${biggest.summary||''}</div>
       </div>
       ${themes.map((t,i)=>`
-      <div class="brief-theme">
+      <div class="brief-theme" onclick="openBriefModal('theme',${i})">
         <div class="brief-theme-num">0${i+1}</div>
         <div class="brief-theme-title">${t.theme||''}</div>
         <div class="brief-theme-body">${t.summary||''}</div>
         ${sourceTags(t.sources)}
+        <div class="brief-theme-cta">Read full analysis →</div>
       </div>`).join('')}
     </div>
     <div class="brief-bottom">
       <div class="brief-trends">
         <div class="brief-trends-label">◆ Emerging Trends</div>
-        ${trends.map(t=>`<div class="brief-trend-item"><div class="brief-trend-title">${t.trend||''}</div><div class="brief-trend-body">${t.summary||''}</div>${sourceTags(t.sources)}</div>`).join('')}
+        ${trends.map((t,i)=>`<div class="brief-trend-item" onclick="openBriefModal('trend',${i})"><div class="brief-trend-title">${t.trend||''}</div><div class="brief-trend-body">${t.summary||''}</div>${sourceTags(t.sources)}</div>`).join('')}
       </div>
       <div class="brief-outlook">
         <div class="brief-outlook-label">◆ 30-Day Outlook</div>
@@ -221,6 +253,49 @@ function renderBrief(b){
       </div>
     </div>`;
   document.getElementById('brief-section').style.display='block';
+}
+function openBriefModal(type,idx){
+  if(!briefData)return;
+  const item=type==='theme'?(briefData.top_themes||[])[idx]:(briefData.emerging_trends||[])[idx];
+  if(!item)return;
+  const title=item.theme||item.trend||'';
+  const typeLabel=type==='theme'?'◆ Theme Analysis':'◆ Trend Analysis';
+  const analysis=(item.full_analysis||item.summary||'').split('\n\n').filter(Boolean).map(p=>`<p>${p.trim()}</p>`).join('');
+  const soWhat=item.so_what||'';
+  const supporting=item.supporting_articles||[];
+  const sourceCards=supporting.length?supporting.map(a=>`
+    <div class="analyst-source-card">
+      <div class="analyst-source-card-top">
+        <div class="analyst-source-card-headline">${a.headline||''}</div>
+        <div class="analyst-source-card-source">${a.source||''}</div>
+      </div>
+      ${a.quote?`<div class="analyst-quote">"${a.quote}"</div>`:''}
+      ${a.data_point?`<div class="analyst-datapoint">◆ ${a.data_point}</div>`:''}
+      ${a.url?`<a href="${a.url}" target="_blank" class="analyst-link">Read source article →</a>`:''}
+    </div>`).join(''):`<div style="font-family:'DM Mono',monospace;font-size:11px;color:#333;padding:16px 0">No source details available</div>`;
+  document.getElementById('modal-content').innerHTML=`
+<button class="modal-close" onclick="document.getElementById('modal-overlay').classList.remove('open');document.body.style.overflow=''">✕</button>
+<div class="analyst-modal">
+  <div class="analyst-header">
+    <div class="analyst-type ${type}">${typeLabel}</div>
+    <div class="analyst-title">${title}</div>
+    <div class="analyst-sources-row">${(item.sources||[]).map(s=>`<span class="brief-source-tag">${s}</span>`).join('')}</div>
+  </div>
+  <div class="analyst-section">
+    <div class="analyst-section-label">Full Analysis</div>
+    <div class="analyst-analysis">${analysis}</div>
+  </div>
+  <div class="analyst-section">
+    <div class="analyst-section-label">Supporting Sources</div>
+    <div class="analyst-sources-list">${sourceCards}</div>
+  </div>
+  <div class="analyst-so-what">
+    <div class="analyst-so-what-label">◆ So What — Why This Matters</div>
+    <div class="analyst-so-what-body">${soWhat}</div>
+  </div>
+</div>`;
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow='hidden';
 }
 async function loadArticles(){try{const r=await fetch('articles.json?t='+Date.now());allArticles=await r.json();render(allArticles)}catch(e){allArticles=getDemoArticles();render(allArticles)}}
 function getDemoArticles(){return[{post_id:"d1",username:"f1",caption:"Championship battle heats up.",main_topic:"Championship Battle",core_message:"Title fight far from over.",key_insights:"Major upgrades incoming. Strategy crucial.",generated_script:"Three drivers. Five races. Everything to play for.",permalink:"https://instagram.com",timestamp:Date.now()/1000},{post_id:"d2",username:"lewishamilton",caption:"New chapter begins.",main_topic:"Hamilton Ferrari",core_message:"Historic switch to Ferrari.",key_insights:"Strong pace shown. Team integration going well.",generated_script:"Seven titles. One dream unfulfilled. Lewis in red.",permalink:"https://instagram.com",timestamp:Date.now()/1000-86400}]}
