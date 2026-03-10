@@ -1,70 +1,144 @@
 {
   "top_themes": [
     {
-      "theme": "F1 Safety Concerns Rise",
-      "summary": "The new 2026 F1 regulations have sparked significant safety concerns among drivers, with Lando Norris warning of potential high-speed accidents. Franco Colapinto's near-miss with Liam Lawson further highlights the dangers posed by the new power unit regulations.",
+      "theme": "F1 2026 Rule Controversies",
+      "summary": "The new 2026 F1 regulations have sparked safety concerns and strategic challenges. Drivers like Lando Norris and Max Verstappen have voiced worries about the potential dangers and artificiality of the new rules.",
+      "full_analysis": "The 2026 F1 regulations have introduced significant changes, focusing on increased electrical power and strategic complexity. Lando Norris has been vocal about the potential safety risks, citing the possibility of high-speed accidents due to the new rules. This concern is compounded by the increased reliance on battery management, which has affected race starts and driver strategies. Verstappen's comments suggest a reluctance to change the rules mid-season, indicating that teams will need to adapt quickly. The emphasis on fan enjoyment, as highlighted by Toto Wolff, suggests that the sport is prioritizing spectacle over driver comfort.",
+      "supporting_articles": [
+        {
+          "headline": "Norris Warns of F1 Safety Risks",
+          "source": "racefansdotnet",
+          "url": "https://www.racefans.net/2026/03/09/round-up-9th-march-2026/",
+          "quote": "\"You're going to have a big accident, which is a shame... you're going to fly and you're going to go over the fence and you're going to do a lot of damage to yourself and maybe to others.\"",
+          "data_point": ""
+        },
+        {
+          "headline": "Wolff Prioritizes Fans Amid 2026 Rule Criticism",
+          "source": "motorsport",
+          "url": "https://www.motorsport.com/f1/news/toto-wolff-responds-to-driver-criticism-of-2026-rules-fans-the-priority-for-f1/10803707/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+          "quote": "Toto Wolff has brushed off driver criticism of the new 2026 Formula 1 regulations, insisting that fan enjoyment is the ultimate priority.",
+          "data_point": ""
+        }
+      ],
+      "so_what": "These controversies could lead to significant mid-season adjustments if safety concerns are validated. Teams must focus on optimizing strategies under the new rules, and fan reactions will be crucial in shaping future regulations.",
       "sources": [
         "racefansdotnet",
         "motorsport"
-      ],
-      "articles": [
-        "Norris Warns of F1 Safety Risks",
-        "Colapinto's Scary Near-Miss with Lawson",
-        "F1 Battery Woes Hit Australian GP Start"
       ]
     },
     {
-      "theme": "Mercedes' Dominance in 2026",
-      "summary": "Mercedes has reasserted its dominance in the 2026 season with a commanding 1-2 finish at the Australian GP. Despite Ferrari's competitive car, strategic missteps and battery issues hindered their performance, allowing Mercedes to capitalize.",
-      "sources": [
-        "the_race_media",
-        "motorsport"
+      "theme": "Mercedes' Dominant Return",
+      "summary": "Mercedes has reasserted its dominance with a commanding 1-2 finish at the Australian GP. This performance marks a significant comeback for the team, setting a high bar for competitors.",
+      "full_analysis": "Mercedes' performance at the Australian Grand Prix indicates a strong start to the 2026 season, with George Russell leading the team to a 1-2 finish. This success follows years of struggle, suggesting that Mercedes has effectively adapted to the new regulations. The team's strategic prowess was evident in their use of the Virtual Safety Car to outmaneuver Ferrari. Despite Ferrari's initial surge, Mercedes' reliability and pace proved superior. This dominance puts pressure on other teams to close the gap quickly.",
+      "supporting_articles": [
+        {
+          "headline": "Mercedes Dominates 2026 Australian GP",
+          "source": "the_race_media",
+          "url": "https://www.the-race.com/formula-1/winners-losers-from-f1-2026-australian-gp/",
+          "quote": "\"Mercedes is back and this championship is its to lose,\" declared Matt Beer.",
+          "data_point": "Mercedes achieved a dominant 1-2 finish."
+        },
+        {
+          "headline": "Mercedes Dominates F1 2026 Opener",
+          "source": "the_race_media",
+          "url": "https://www.the-race.com/formula-1/mercedes-1-2-in-f1-2026-opener-after-early-ferrari-tussle/",
+          "quote": "George Russell spearheaded a triumphant start to the 2026 Formula 1 season for Mercedes, securing victory at the Australian Grand Prix.",
+          "data_point": "Mercedes' first 1-2 finish since 2024."
+        }
       ],
-      "articles": [
-        "Mercedes Dominates 2026 Australian GP",
-        "Mercedes Dominates F1 2026 Opener",
-        "Wolff Prioritizes Fans Amid 2026 Rule Criticism"
-      ]
-    },
-    {
-      "theme": "Driver Rivalries Intensify",
-      "summary": "Tensions between drivers are escalating, with Max Verstappen accusing Arvid Lindblad of brake-checking and Liam Lawson reigniting a feud with Sergio Perez. These incidents highlight the growing intensity and competitiveness among drivers.",
+      "so_what": "Mercedes' resurgence could redefine the championship battle, with other teams needing to innovate quickly to remain competitive. Watch for strategic adjustments from rivals as they attempt to counter Mercedes' advantage.",
       "sources": [
-        "racefansdotnet",
         "the_race_media"
+      ]
+    },
+    {
+      "theme": "Strategic Complexity of New Power Units",
+      "summary": "The new power units in F1 2026 have introduced a layer of strategic complexity, impacting race dynamics and driver tactics. Energy management has become a critical factor in race outcomes.",
+      "full_analysis": "The introduction of new power units in 2026 has shifted the focus to energy management and strategic deployment of power modes. The duel between Russell and Leclerc exemplified the tactical depth required under the new regulations. Drivers must now balance overtaking opportunities with energy conservation, adding a new dimension to race strategy. This complexity is further highlighted by the battery issues at the race start, affecting multiple teams. The strategic decisions made by teams like Mercedes during the Virtual Safety Car period underscore the importance of adaptability.",
+      "supporting_articles": [
+        {
+          "headline": "Russell vs Leclerc: Australian GP Duel",
+          "source": "racefansdotnet",
+          "url": "https://www.racefans.net/2026/03/08/its-a-big-advantage-to-be-second-russell-and-leclercs-radio-from-their-lead-battle/",
+          "quote": "George Russell and Charles Leclerc's thrilling duel at the Australian Grand Prix highlighted the strategic depth brought by Formula 1's new power units.",
+          "data_point": ""
+        },
+        {
+          "headline": "F1 Battery Woes Hit Australian GP Start",
+          "source": "motorsport",
+          "url": "https://www.motorsport.com/f1/news/Why-many-f1-drivers-had-flat-batteries-as-they-lined-up/10803679/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+          "quote": "The Australian Grand Prix kicked off with an unexpected twist as several Formula 1 drivers faced depleted batteries on the grid, impacting their start performance.",
+          "data_point": ""
+        }
       ],
-      "articles": [
-        "Verstappen Claims Lindblad Brake-Checked Him",
-        "Lawson vs. Perez: Australian GP Clash"
+      "so_what": "The strategic complexity of the new power units will shape race strategies and team dynamics throughout the season. Teams that master energy management will have a competitive edge, making this a critical area to watch.",
+      "sources": [
+        "racefansdotnet",
+        "motorsport"
       ]
     }
   ],
   "emerging_trends": [
     {
-      "trend": "Battery Management Challenges",
-      "summary": "The new regulations focusing on increased electrical power have introduced complex battery management challenges. Multiple teams, including Ferrari and Mercedes, struggled with depleted batteries, affecting race starts and overall performance.",
+      "trend": "Safety Concerns with New Regulations",
+      "summary": "The 2026 F1 regulations have raised safety concerns among drivers, with potential high-speed accidents being a key issue. This trend reflects ongoing debates about balancing innovation with safety.",
+      "full_analysis": "Safety has always been a paramount concern in Formula 1, and the new 2026 regulations have reignited this debate. Drivers like Lando Norris have highlighted the risks associated with the increased reliance on electrical power and battery management. The potential for high-speed accidents and the artificial nature of racing under these rules have been criticized. Historically, F1 has faced similar challenges when introducing new technologies, requiring a balance between innovation and driver safety. The sport must address these concerns to maintain its credibility and protect its participants.",
+      "supporting_articles": [
+        {
+          "headline": "Norris Warns of F1 Safety Risks",
+          "source": "racefansdotnet",
+          "url": "https://www.racefans.net/2026/03/09/round-up-9th-march-2026/",
+          "quote": "You're going to have a big accident, which is a shame... you're going to fly and you're going to go over the fence and you're going to do a lot of damage to yourself and maybe to others.",
+          "data_point": ""
+        },
+        {
+          "headline": "Wolff Prioritizes Fans Amid 2026 Rule Criticism",
+          "source": "motorsport",
+          "url": "https://www.motorsport.com/f1/news/toto-wolff-responds-to-driver-criticism-of-2026-rules-fans-the-priority-for-f1/10803707/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+          "quote": "Toto Wolff has brushed off driver criticism of the new 2026 Formula 1 regulations, insisting that fan enjoyment is the ultimate priority.",
+          "data_point": ""
+        }
+      ],
+      "so_what": "Addressing safety concerns will be crucial for the sport's future, as unresolved issues could lead to regulatory changes or impact driver participation. Monitoring how F1 balances innovation with safety will be key.",
       "sources": [
-        "motorsport",
-        "racefansdotnet"
+        "racefansdotnet",
+        "motorsport"
       ]
     },
     {
-      "trend": "Strategic Complexity in Races",
-      "summary": "The 2026 regulations have increased the strategic complexity of races, as seen in the Russell vs Leclerc duel. Teams are now focusing on energy management and strategic pit stops, which are becoming crucial for race outcomes.",
+      "trend": "Mercedes' Strategic Mastery",
+      "summary": "Mercedes' strategic prowess has been a defining factor in their resurgence, showcasing their ability to adapt to new regulations and outmaneuver competitors. This trend underscores their continued dominance in F1.",
+      "full_analysis": "Mercedes has consistently demonstrated strategic excellence, and their performance at the 2026 Australian GP is a testament to this. The team's ability to capitalize on the Virtual Safety Car and manage energy effectively highlights their adaptability. Historically, Mercedes has excelled in strategic execution, often setting the benchmark for other teams. Their focus on reliability and pace, coupled with strategic acumen, has reestablished them as a formidable force. This trend suggests that Mercedes will continue to be a dominant player, forcing rivals to innovate and strategize more aggressively.",
+      "supporting_articles": [
+        {
+          "headline": "Mercedes Dominates 2026 Australian GP",
+          "source": "the_race_media",
+          "url": "https://www.the-race.com/formula-1/winners-losers-from-f1-2026-australian-gp/",
+          "quote": "Mercedes is back and this championship is its to lose.",
+          "data_point": "Mercedes achieved a dominant 1-2 finish."
+        },
+        {
+          "headline": "Mercedes Dominates F1 2026 Opener",
+          "source": "the_race_media",
+          "url": "https://www.the-race.com/formula-1/mercedes-1-2-in-f1-2026-opener-after-early-ferrari-tussle/",
+          "quote": "George Russell spearheaded a triumphant start to the 2026 Formula 1 season for Mercedes.",
+          "data_point": "Mercedes' first 1-2 finish since 2024."
+        }
+      ],
+      "so_what": "Mercedes' strategic mastery will likely influence the competitive landscape, with other teams needing to elevate their game. This trend highlights the importance of strategic innovation in maintaining a competitive edge.",
       "sources": [
-        "racefansdotnet",
         "the_race_media"
       ]
     }
   ],
   "biggest_story": {
     "headline": "Mercedes Dominates 2026 Australian GP",
-    "summary": "Mercedes' commanding 1-2 finish at the Australian Grand Prix has set the tone for the 2026 season, reestablishing them as the team to beat. Despite Ferrari's initial strong performance, strategic errors and battery issues allowed Mercedes to pull ahead. This victory underscores Mercedes' ability to adapt to the new regulations and maintain their competitive edge.",
+    "summary": "Mercedes' commanding 1-2 finish at the Australian Grand Prix marks a significant comeback for the team. George Russell led the charge, showcasing the team's strategic and technical superiority. This performance sets a high standard for the 2026 season, with Mercedes reestablishing itself as the team to beat.",
     "source": "the_race_media",
-    "why_it_matters": "Mercedes' dominance impacts the championship race and fan expectations for the season."
+    "why_it_matters": "Mercedes' dominance reshapes the championship battle, impacting fan expectations and team strategies."
   },
-  "thirty_day_outlook": "In the coming month, expect continued focus on the safety implications of the new F1 regulations, as drivers and teams adjust to the increased electrical power and battery management challenges. Mercedes' early dominance will likely prompt rivals like Ferrari and Red Bull to intensify their efforts to close the performance gap. Additionally, driver rivalries and strategic battles will continue to captivate fans, with potential flashpoints arising from aggressive on-track encounters and evolving team dynamics.",
-  "generated_at": "2026-03-10T13:59:55.302412+00:00",
+  "thirty_day_outlook": "In the coming month, expect teams to focus on optimizing their strategies under the new 2026 regulations, particularly in energy management and battery usage. Mercedes' dominance will likely push competitors like Ferrari and Red Bull to innovate quickly to close the performance gap. Safety concerns may prompt discussions on potential regulatory adjustments if incidents occur. Watch for continued driver feedback and fan reactions as the season progresses, influencing the future direction of F1.",
+  "generated_at": "2026-03-10T14:21:56.079368+00:00",
   "article_count": 14,
   "sources": [
     "motorsport",
